@@ -9,8 +9,7 @@ namespace SimplePainter.Figures
 {
     public class Circle : Ellipse
     {
-        public Circle(Point start, Point end)
-            : base(start, end)
+        public Circle()
         {
 
         }
@@ -19,18 +18,17 @@ namespace SimplePainter.Figures
         {
             Pen pen = new Pen(Color.Black, 3);
             this.drawSurface = drawSurface;
-            int sizeCircle = Math.Abs(start.X - end.X);
-            if (end.X > start.X && end.Y > start.Y)
-                 drawSurface.DrawEllipse(pen, start.X, start.Y, sizeCircle, sizeCircle);
+            if (this.lastPoint.X > firstPoint.X && lastPoint.Y > firstPoint.Y)
+                 drawSurface.DrawEllipse(pen, firstPoint.X, firstPoint.Y, GetSizeShape(lastPoint, firstPoint), GetSizeShape(lastPoint, firstPoint));
             else 
-                if (end.X > start.X && end.Y < start.Y)
-                    drawSurface.DrawEllipse(pen, start.X, start.Y, sizeCircle, -sizeCircle);
+                if (lastPoint.X > firstPoint.X && lastPoint.Y < firstPoint.Y)
+                    drawSurface.DrawEllipse(pen, firstPoint.X, firstPoint.Y, GetSizeShape(lastPoint, firstPoint), -GetSizeShape(lastPoint, firstPoint));
                 else 
-                    if (end.X < start.X && end.Y > start.Y)
-                        drawSurface.DrawEllipse(pen, start.X, start.Y, -sizeCircle, sizeCircle);
+                    if (lastPoint.X < firstPoint.X && lastPoint.Y > firstPoint.Y)
+                        drawSurface.DrawEllipse(pen, firstPoint.X, firstPoint.Y, -GetSizeShape(lastPoint, firstPoint), GetSizeShape(lastPoint, firstPoint));
                     else 
-                        if (end.X < start.X && end.Y < start.Y)
-                            drawSurface.DrawEllipse(pen, start.X, start.Y, -sizeCircle, -sizeCircle);
+                        if (lastPoint.X < firstPoint.X && lastPoint.Y < firstPoint.Y)
+                            drawSurface.DrawEllipse(pen, firstPoint.X, firstPoint.Y, -GetSizeShape(lastPoint, firstPoint), -GetSizeShape(lastPoint, firstPoint));
         }
     }
 }

@@ -10,18 +10,15 @@ namespace SimplePainter.Figures
 {
     public class Line : Figure
     {
-        private List<Point> points;
-
-        public Line(Point point1, Point point2)
+        public Line()
         {
-            points = new List<Point> { point1, point2 };
         }
 
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
             this.drawSurface = drawSurface;
-            this.drawSurface.DrawLine(pen, points[0], points[1]);
+            this.drawSurface.DrawLine(pen, firstPoint, lastPoint);
         }
     }
 }

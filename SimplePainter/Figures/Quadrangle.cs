@@ -12,15 +12,23 @@ namespace SimplePainter.Figures
     {
         private List<Point> points;
 
-        public Quadrangle(Point point1, Point point2, Point point3, Point point4)
+        public Quadrangle()
         {
-            points = new List<Point>() { point1, point2, point3, point4 };
+            
         }
 
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
             this.drawSurface = drawSurface;
+            ;
+            Point g_1 = new Point((int)(firstPoint.X - 30), (int)(firstPoint.Y - 30));
+            Point g_2 = new Point((int)(lastPoint.X + 30), (int)(lastPoint.Y + 30));
+            Point g_3 = new Point((int)(firstPoint.X), (int)(firstPoint.Y));
+            Point g_4 = new Point((int)(lastPoint.X), (int)(lastPoint.Y));
+
+
+            points = new List<Point>() { g_3, g_1, g_4, g_2 };
             this.drawSurface.DrawPolygon(pen, points.ToArray());
         }
     }
