@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbElipse = new System.Windows.Forms.PictureBox();
-            this.pictureDrawing = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureDrawing = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbElipse)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -56,21 +54,76 @@
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.pbElipse);
             this.panel2.Location = new System.Drawing.Point(12, 8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(106, 225);
             this.panel2.TabIndex = 1;
             // 
-            // pbElipse
+            // pictureBox6
             // 
-            this.pbElipse.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pbElipse.Location = new System.Drawing.Point(12, 22);
-            this.pbElipse.Name = "pbElipse";
-            this.pbElipse.Size = new System.Drawing.Size(27, 21);
-            this.pbElipse.TabIndex = 0;
-            this.pbElipse.TabStop = false;
-            this.pbElipse.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox6.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox6.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox6.Location = new System.Drawing.Point(54, 153);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox5.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 153);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox4.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox4.Location = new System.Drawing.Point(54, 103);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox3.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox3.Location = new System.Drawing.Point(54, 49);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox2.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 103);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox1.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // pictureDrawing
             // 
@@ -84,66 +137,6 @@
             this.pictureDrawing.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseMove);
             this.pictureDrawing.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseUp);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox1.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox2.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 103);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox3.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox3.Location = new System.Drawing.Point(54, 49);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox4.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox4.Location = new System.Drawing.Point(54, 103);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox5.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 153);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox6.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox6.Location = new System.Drawing.Point(54, 153);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,21 +148,19 @@
             this.Name = "mainForm";
             this.Text = "Simple Painter";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbElipse)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pbElipse;
         private System.Windows.Forms.PictureBox pictureDrawing;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;

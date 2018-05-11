@@ -1,6 +1,5 @@
 ﻿using SimplePainter.Figures;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -34,9 +33,9 @@ namespace SimplePainter
             switch (currTool)
             {
                 case TTools.QUADRANGLE:
-                    Point point_3 = new Point(startCoords.X - 10, startCoords.Y - 10);
-                    Point point_4 = new Point(startCoords.X + 10, startCoords.Y + 10);
-                    Figures.Quadrangle quadrangle = new Figures.Quadrangle(startCoords, point_3, startCoords, point_4);
+                    Point point_3 = new Point(startCoords.X - 30, startCoords.Y - 30);
+                    Point point_4 = new Point(endCoords.X + 30, endCoords.Y + 30);
+                    Figures.Quadrangle quadrangle = new Figures.Quadrangle(startCoords, point_3, endCoords, point_4);
                     quadrangle.Draw(drawSurface);
                     break;
                 case TTools.RECTANGLE:
@@ -44,7 +43,7 @@ namespace SimplePainter
                     rectangle.Draw(drawSurface);
                     break;
                 case TTools.ELLIPSE:
-                    Ellipse ellipse = new Ellipse(startCoords.X, startCoords.Y,  endCoords.X - startCoords.X, endCoords.X - startCoords.Y);
+                    Ellipse ellipse = new Ellipse(startCoords, endCoords);
                     ellipse.Draw(drawSurface);
                     break;
                 case TTools.LINE:
@@ -52,7 +51,7 @@ namespace SimplePainter
                     line.Draw(drawSurface);
                     break;
                 case TTools.CIRCLE:
-                    Circle circle = new Circle(startCoords.X, startCoords.Y, endCoords.X - startCoords.X);
+                    Circle circle = new Circle(startCoords, endCoords);
                     circle.Draw(drawSurface);
                     break;
                 case TTools.SQUARE:
@@ -97,6 +96,36 @@ namespace SimplePainter
             drawSurface = g;
             ToolDraw();
             grFront.DrawImage(bm, 0, 0);
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            currTool = TTools.CIRCLE;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            currTool = TTools.ELLIPSE;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            currTool = TTools.LINE;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            currTool = TTools.QUADRANGLE;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            currTool = TTools.RECTANGLE;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            currTool = TTools.SQUARE;
         }
     }
 }
