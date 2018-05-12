@@ -17,8 +17,7 @@ namespace SimplePainter.Figures
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
-            this.drawSurface = drawSurface;
-            this.drawSurface.DrawLine(pen, firstPoint, lastPoint);
+            drawSurface.DrawLine(pen, firstPoint, lastPoint);
         }
     }
 }

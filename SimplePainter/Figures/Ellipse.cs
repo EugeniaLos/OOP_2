@@ -11,8 +11,7 @@ namespace SimplePainter.Figures
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
-            this.drawSurface = drawSurface;
-            this.drawSurface.DrawEllipse(pen, this.firstPoint.X, this.firstPoint.Y, this.lastPoint.X - this.firstPoint.X, this.lastPoint.Y - this.firstPoint.Y);
+            drawSurface.DrawEllipse(pen, this.firstPoint.X, this.firstPoint.Y, this.lastPoint.X - this.firstPoint.X, this.lastPoint.Y - this.firstPoint.Y);
         }
     }
 }

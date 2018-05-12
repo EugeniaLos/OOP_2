@@ -13,8 +13,7 @@ namespace SimplePainter.Figures
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
-            this.drawSurface = drawSurface;
-            this.drawSurface.DrawRectangle(pen, GetX(firstPoint, lastPoint), GetY(firstPoint, lastPoint), GetWidthShape(firstPoint, lastPoint), GetHightShape(firstPoint, lastPoint));
+            drawSurface.DrawRectangle(pen, GetX(firstPoint, lastPoint), GetY(firstPoint, lastPoint), GetWidthShape(firstPoint, lastPoint), GetHightShape(firstPoint, lastPoint));
         }
     }
 }

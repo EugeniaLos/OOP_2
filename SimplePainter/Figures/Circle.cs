@@ -17,7 +17,7 @@ namespace SimplePainter.Figures
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
-            this.drawSurface = drawSurface;
+            
             if (this.lastPoint.X > firstPoint.X && lastPoint.Y > firstPoint.Y)
                  drawSurface.DrawEllipse(pen, firstPoint.X, firstPoint.Y, GetSizeShape(lastPoint, firstPoint), GetSizeShape(lastPoint, firstPoint));
             else 

@@ -6,7 +6,7 @@ namespace SimplePainter.Figures
 {
     public class Figure
     {
-        protected Graphics drawSurface;
+        
         public Point firstPoint;
         public Point lastPoint;
 
@@ -19,10 +19,7 @@ namespace SimplePainter.Figures
             lastPoint = point;
         }
 
-        public virtual void Draw(Graphics drawSurface)
-        {
-
-        }
+        public virtual void Draw(Graphics drawSurface){}
 
         protected static float GetWidthShape(Point first, Point second)
         {

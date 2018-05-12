@@ -20,8 +20,6 @@ namespace SimplePainter.Figures
         public override void Draw(Graphics drawSurface)
         {
             Pen pen = new Pen(Color.Black, 3);
-            this.drawSurface = drawSurface;
-            ;
             Point g_1 = new Point((int)(firstPoint.X - 30), (int)(firstPoint.Y - 30));
             Point g_2 = new Point((int)(lastPoint.X + 30), (int)(lastPoint.Y + 30));
             Point g_3 = new Point((int)(firstPoint.X), (int)(firstPoint.Y));
@@ -29,7 +27,7 @@ namespace SimplePainter.Figures
 
 
             points = new List<Point>() { g_3, g_1, g_4, g_2 };
-            this.drawSurface.DrawPolygon(pen, points.ToArray());
+            drawSurface.DrawPolygon(pen, points.ToArray());
         }
     }
 }
