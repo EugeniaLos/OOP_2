@@ -116,5 +116,20 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geom_figury2_0002_circle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geom_figury2_0001_elipse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geom_figury2_0005_quadrangle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geom_figury2_0004_rectangle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geom_figury2_0003_square.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

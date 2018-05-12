@@ -69,5 +69,55 @@ namespace SimplePainter.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geom_figury2_0001_elipse {
+            get {
+                object obj = ResourceManager.GetObject("geom_figury2_0001_elipse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geom_figury2_0002_circle {
+            get {
+                object obj = ResourceManager.GetObject("geom_figury2_0002_circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geom_figury2_0003_square {
+            get {
+                object obj = ResourceManager.GetObject("geom_figury2_0003_square", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geom_figury2_0004_rectangle {
+            get {
+                object obj = ResourceManager.GetObject("geom_figury2_0004_rectangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geom_figury2_0005_quadrangle {
+            get {
+                object obj = ResourceManager.GetObject("geom_figury2_0005_quadrangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

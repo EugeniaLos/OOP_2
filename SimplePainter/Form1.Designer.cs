@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureDrawing = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureDrawing = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -59,10 +59,22 @@
             this.panel2.Size = new System.Drawing.Size(106, 225);
             this.panel2.TabIndex = 1;
             // 
+            // pictureDrawing
+            // 
+            this.pictureDrawing.BackColor = System.Drawing.Color.White;
+            this.pictureDrawing.Location = new System.Drawing.Point(124, 12);
+            this.pictureDrawing.Name = "pictureDrawing";
+            this.pictureDrawing.Size = new System.Drawing.Size(600, 301);
+            this.pictureDrawing.TabIndex = 2;
+            this.pictureDrawing.TabStop = false;
+            this.pictureDrawing.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseDown);
+            this.pictureDrawing.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseMove);
+            this.pictureDrawing.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseUp);
+            // 
             // pictureBox6
             // 
-            this.pictureBox6.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox6.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox6.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0003_square;
+            this.pictureBox6.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0003_square;
             this.pictureBox6.Location = new System.Drawing.Point(54, 153);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(36, 35);
@@ -72,8 +84,8 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox5.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox5.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0004_rectangle;
+            this.pictureBox5.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0004_rectangle;
             this.pictureBox5.Location = new System.Drawing.Point(12, 153);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(36, 35);
@@ -83,8 +95,8 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox4.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox4.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0005_quadrangle;
+            this.pictureBox4.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0005_quadrangle;
             this.pictureBox4.Location = new System.Drawing.Point(54, 103);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(36, 35);
@@ -94,8 +106,8 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox3.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox3.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0001_elipse;
+            this.pictureBox3.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0001_elipse;
             this.pictureBox3.Location = new System.Drawing.Point(54, 49);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 35);
@@ -116,26 +128,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
-            this.pictureBox1.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0000_line;
+            this.pictureBox1.BackgroundImage = global::SimplePainter.Properties.Resources.geom_figury2_0002_circle;
+            this.pictureBox1.InitialImage = global::SimplePainter.Properties.Resources.geom_figury2_0002_circle;
             this.pictureBox1.Location = new System.Drawing.Point(12, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 35);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // pictureDrawing
-            // 
-            this.pictureDrawing.BackColor = System.Drawing.Color.White;
-            this.pictureDrawing.Location = new System.Drawing.Point(124, 12);
-            this.pictureDrawing.Name = "pictureDrawing";
-            this.pictureDrawing.Size = new System.Drawing.Size(600, 301);
-            this.pictureDrawing.TabIndex = 2;
-            this.pictureDrawing.TabStop = false;
-            this.pictureDrawing.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseDown);
-            this.pictureDrawing.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseMove);
-            this.pictureDrawing.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureDrawing_MouseUp);
             // 
             // mainForm
             // 
@@ -148,13 +148,13 @@
             this.Name = "mainForm";
             this.Text = "Simple Painter";
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDrawing)).EndInit();
             this.ResumeLayout(false);
 
         }
